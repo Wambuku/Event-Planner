@@ -1,0 +1,9 @@
+{
+    "name": "decentralized_event_planning_backend",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "azle": "^0.19.0"
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "canisters": {
+    "decentralized_event_planning_backend": {
+      "build": "npx azle decentralized_event_planning_backend",
+      "candid": "src/decentralized_event_planning_backend/decentralized_event_planning_backend.did",
+      "gzip": true,
+      "main": "src/decentralized_event_planning_backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "javascript": {},
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/decentralized_event_planning_backend/decentralized_event_planning_backend.wasm"
+    },
+    "decentralized_event_planning_frontend": {
+      "dependencies": [
+        "decentralized_event_planning_backend"
+      ],
+      "source": [
+        "src/decentralized_event_planning_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "decentralized_event_planning_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
